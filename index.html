@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header><h1>Calculadora de regresión</h1></header>
+    <section>
+    <select id="selectRegression" class="form-control">
+    <option value="0">Regresión Lineal</option>
+    <option value="1">Regresión Cuadrática</option>
+    <option value="2">Regresión Exponencial</option>
+    </select>
+    <select id="selectFunc" class="form-control">
+    <option value="0">x^2</option>
+    <option value="1">sin^2(x)</option>
+    <option value="2">x + 4</option>
+    <option value="3">x^3</option>
+    <option value="4">x^4</option>
+    </select>
+    <button class="button-primary" type="button" id="run">
+        Act
+    </button>
+</section>
+    <h5 id="rfunction">x</h5>
+    <div class="graph">
+        <canvas id="myChart" width="10" height="4"></canvas>
+    </div>
+    <script src= "chart.js"></script>
+    <script src= "regression.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

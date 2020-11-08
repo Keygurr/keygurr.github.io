@@ -1,0 +1,12 @@
+.graph {
+    float: right;
+    width: 1300px;
+    height: 600px;
+    padding: 20px;
+    width: 70%;
+}
+section:after {
+    content: "";
+    clear: both;
+  }
+  
