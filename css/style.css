@@ -1,12 +1,18 @@
 .graph {
-    float: right;
+    float:right;
     width: 1300px;
     height: 600px;
     padding: 20px;
     width: 70%;
 }
-section:after {
+
+section{
+    padding: 10px 10px 10px 10px;
     content: "";
     clear: both;
   }
-  
+
+.sidenav {
+    float:left;
+    
+}

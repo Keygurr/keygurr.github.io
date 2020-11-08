@@ -50,7 +50,7 @@ function getData(index, rIndex) {
     {         
     labels: data2,
     datasets: [{
-        label: ['Gráfica'],
+        label: ['Función'],
         data: data,
         fill:false,
         backgroundColor:
@@ -117,5 +117,5 @@ var myChart = new Chart(ctx, {
     type: 'line',
     data: getData(selValue, rIndex)
 });
-document.getElementById("rfunction").innerHTML = rFunc;
+document.getElementById("rfunction").innerHTML = "Función de regresión: " + rFunc;
 
