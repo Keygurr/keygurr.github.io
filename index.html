@@ -15,44 +15,45 @@
 </head>
 
 <body>
-    <header><h1>Calculadora de regresión</h1></header>
+    <header><h1>Calculadora de integrales</h1></header>
     <aside class="sidenav">
         <section>
-            <h5>Función a hacer regresión: </h5>
-            <select id="selectFunc" class="form-control">
-                <option value="0">x^2</option>
-                <option value="1">sin^2(x)</option>
-                <option value="2">x + 4</option>
-                <option value="3">x^3</option>
-                <option value="4">x^4</option>
-            </select>
-            
-        </section>
-        
-        <section>
-            <h5>Tipo de regresión: </h5>
-            <select id="selectRegression" class="form-control">
-                <option value="0">Lineal</option>
-                <option value="1">Cuadrática</option>
-                <option value="2">Exponencial</option>
-            </select>
-        </section>
-        <section>
+            <form>
+                <h5>Ingrese función en base a x: </h5>
+                <input type="text" id="selectFunc" name="fname"><br>
+            </form> 
+            <form>
+                <h5>Ingrese a: </h5>
+                <input type="text" id="a" name="fname"><br>
+            </form> 
+            <form>
+                <h5>Ingrese b: </h5>
+                <input type="text" id="b" name="fname"><br>
+            </form> 
+            <form>
+                <h5>Ingrese n: </h5>
+                <input type="text" id="n" name="fname"><br>
+            </form> 
+            <h5></h5>
+            <h5 id="Simpson13"></h5>
+            <h5></h5>
+            <h5 id="Simpson38"></h5>
+            <h5></h5>
+            <h5 id="Trapecio"></h5>
             <button class="button-primary" type="button" id="run">
                 Actualizar
             </button>
         </section>
         </h5>
-        <section>
-            <h5 id="rfunction"></h5>
-        </section>
+
+
     </aside>
     <div class="graph">
         <canvas id="myChart" width="10" height="4"></canvas>
     </div>
-    <script src= "chart.js"></script>
-    <script src= "regression.js"></script>
+    <script src="chart.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.js"></script>
 
 </body>
 </html>
